@@ -1,0 +1,59 @@
+.content .title {
+    margin: 90px 0 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: green;
+}
+
+body {
+    font: 12px Helvetica,Arial,sans-serif;
+    color: #282828;
+    background: rgb(255, 255, 255);
+}
+.content {
+    width: 700px;
+    min-height: 450px;
+    margin: 100px auto 45px;
+    padding-bottom: 100px;
+    border: 2px solid #2b2927;
+    border-radius: 10px;
+    background-color: #fae0e0;
+    
+    
+}
+
+.content .updateForm {
+    width: 395px;
+    margin: 0 auto;
+}
+div {
+    display: block;
+}
+
+.content .as {
+    display: block;
+    width: 391px;
+    padding: 12px 1px;
+    border: 5px ;
+    border-radius: 2px;
+    line-height: 14px;
+    font-size: 12px;
+    
+}
+.btn {
+    display: block;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #e8171f;
+    cursor: pointer;
+}
+.content .btnLine .btn {
+    width: 100%;
+    border-radius: 10px;
+}
