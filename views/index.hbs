@@ -30,9 +30,9 @@
         </div>
         <br>
         <br>
-            <form action="/insert" class="btn-option1">
-                <input class="btn-option" type="submit" name="insert" value="Create new product" >
-            </form>
+        <form action="/insert" class="btn-option1">
+            <input class="btn-option" type="submit" name="insert" value="Create new product">
+        </form>
         <br>
         <br>
 
@@ -54,8 +54,13 @@
                 <td>{{Color}}</td>
                 <td>{{Material}}</td>
                 <td>{{Description}}</td>
-                <td><a href="/delete?id={{_id}}">Delete</a>
-                <a href="/edit?id={{_id}}">Edit</a></li> </td>
+                <td>
+                    <form action=""></form>
+                    <form action=""></form>
+                    <a href="/delete?id={{_id}}">Delete</a>
+                    <a href="/edit?id={{_id}}">Edit</a></li>
+                </td>
+
             </tr>
             {{/ each}}
         </table>
