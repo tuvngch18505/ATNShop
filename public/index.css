@@ -115,6 +115,7 @@ th{
     padding-right: 50px;
     background-color: #202040;
     color: white;
+    text-align: center;
 }
 
 table tr:nth-child(odd) td{
@@ -127,4 +128,5 @@ td{
     width: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
