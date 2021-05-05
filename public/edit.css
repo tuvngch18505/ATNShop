@@ -1,9 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background-color: #F0EFE2;
+}
+
 .content .title {
     margin: 90px 0 50px;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 500;
-    color: green;
+    
 }
 
 body {
@@ -12,15 +27,24 @@ body {
     background: rgb(255, 255, 255);
 }
 .content {
-    width: 700px;
+    width: 760px;
     min-height: 450px;
-    margin: 100px auto 45px;
+    margin: 50px auto 10px;
     padding-bottom: 100px;
-    border: 2px solid #2b2927;
-    border-radius: 10px;
-    background-color: #fae0e0;
+    border: 1px solid #f5a1a1;
+    border-radius: 5px;
+    background-color: #f5a1a1;
+    font-size: 25px;
     
     
+}
+.header h1 {
+    height: 55px;
+    border-bottom: 1px solid #dddddd;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ffffff;
 }
 
 .content .updateForm {
@@ -38,22 +62,25 @@ div {
     border: 5px ;
     border-radius: 2px;
     line-height: 14px;
-    font-size: 12px;
+    font-size: 20px;
     
 }
-.btn {
+
+.content .btnLine .btn {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input.btn-option{
     display: block;
+    width: 100%;
     height: 36px;
     border: none;
     border-radius: 3px;
     line-height: 36px;
     text-align: center;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 20px;
     background-color: #e8171f;
     cursor: pointer;
-}
-.content .btnLine .btn {
-    width: 100%;
-    border-radius: 10px;
 }
