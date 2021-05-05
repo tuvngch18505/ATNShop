@@ -66,7 +66,7 @@ app.get('/delete',async (req,res)=>{
 })
 
 app.get('/insert',(req, res) => {
-    res.render("newProduct")
+    res.render("newproduct")
 })
 
 app.post('/doInsert',async (req, res)=>{
