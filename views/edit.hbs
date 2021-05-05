@@ -11,24 +11,36 @@
 </head>
 
 <body>
-    <div class="content" style="top: 39.2px;">
+    <div class="header">
+        <h1> ATN Shop</h1>
+    </div>
+    <div class="content" >
 
         <h1 class="title">Update Product</h1>
-        
+
         <form action="/update" method="post" class="updateForm">
-            <div class="as">
                 <input type="hidden" name="txtId" value="{{product._id}}">
                 <br>
-                <input type="text" name="txtNumber" value="{{product.number}}" placeholder="Number" class="as" />
+                Number
+                <input type="text" name="txtNumber" value="{{product.Number}}" placeholder="Number" class="as" />
                 <br>
-                <input type="text" name="txtName" value="{{product.name}}" class="as" placeholder="Name" />
+                Name
+                <input type="text" name="txtName" value="{{product.Name}}" class="as" placeholder="Name" class="as"/>
                 <br>
-                <input type="text" name="txtPrice" value="{{product.price}}" class="as" placeholder="Price" />
+                Price
+                <input type="text" name="txtPrice" value="{{product.Price}}" class="as" placeholder="Price" class="as" />
                 <br>
-            </div>
+                Color
+                <input type="text" name="txtColor" value="{{product.Color}}" placeholder="Color" class="as">
+                <br>
+                Material
+                <input type="text" name="txtMaterial" value="{{product.Material}}" placeholder="Material" class="as">
+                <br>
+                Descreption
+                <input type="text" name="txtDescreption" value="{{product.Description}}" class="as">
             <br>
             <div class="btnLine">
-                <input type="submit" value="Update" class="btn">
+                <input type="submit" value="Update" class="btn-option">
             </div>
         </form>
     </div>
