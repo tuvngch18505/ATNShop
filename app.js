@@ -78,7 +78,6 @@ app.post('/doInsert',async (req, res)=>{
     var madeinInput = req.body.txtMadein;
     var DescriptionInput = req.body.txtDescription; 
     var newProduct = {Number: numberInput, Name: nameInput, Price:priceInput, Color: colorInput, Material: materialInput, Madein: madeinInput, Description: DescriptionInput};
-
     let client = await MongoClient.connect(url); // connect to url mongodb
     let dbo = client.db("asm2"); // connect to asm2 table
     await dbo.collection("product").insertOne(newProduct); // add insert
@@ -89,6 +88,7 @@ app.post('/search',async (req,res)=>{
     let client = await MongoClient.connect(url); // connect adress
     let nameInput = req.body.txtName;
     let searchCondition = new RegExp(nameInput, 'i')
+    //hellởqeqưeq
     let dbo = client.db("asm2"); // connect database test table
     let results = await dbo.collection("product").find({Name: searchCondition}).toArray(); // lay product table
     res.render('index',{model: results})
